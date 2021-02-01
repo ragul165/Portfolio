@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>SuBiKsHa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container" id="home">
+    <div class="card">
+    
+    <div class="banner" > 
+        <div class="toggle" onclick="toggleMenu();"></div>  
+        <div class="imgSidebar">
+            <img src="Subi_pro.jpg">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">My_Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>,I'm</h4>
+                <h2>Subiksha</h2>
+                <h4>I'm a digital artist.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ducimus magnam. Quas consequatur quo atque, voluptate natus sequi fugit sit tenetur facilis inventore iure labore, nesciunt hic quidem sed error architecto recusandae aliquam
+                    possimus fuga aperiam iste dolorum. Quidem, similique.</p>
+                <a href="#foot" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <section class="about" id="about">
+       <div class="title white">
+           <h2>About Me</h2>
+           <p>Lorem is ne inventore nam obcaeciunt dolore, saepe mollitia.</p>
+       </div>
+       <div class="content">
+           <div class="textBx">
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nam magni corporis in! Mollitia voluptates, eos vitae, tempora placeat dolorem doloribus nulla accusamus ut dolor obcaecati modi quo autem explicabo, exercitationem eum cum et ipsam deleniti beatae possimus cumque enim. Recusandae, quis sequi repellendus deserunt, nesciunt ad praesentium quo harum soluta, veritatis nostrum. Dolores eos sint corporis corrupti mollitia? Aspernatur similique maiores, pariatur voluptatem, dolorum illum amet natus magni saepe nemo placeat voluptates vitae praesentium? Saepe voluptate, quaerat commodi sunt dignissimos asperiores tenetur velit voluptas soluta autem qui, voluptatum eveniet alias natus a? Aperiam iure perferendis quidem assumenda, nam nemo.</p>
+           </div>
+           <diV CLASS="imgBx">
+               <img src="aboutimg.jpg">
+           </diV>
+        </div>
+    </section>
+    <section class="container2" id="work">
+        <div class="title white">
+            <h2>My work</h2>
+        </div>
+        <div class="container3">    
+        <div class="card2">
+          <img src="./Screenshot_20210201-175317__01.jpg">
+        </div>
+        <div class="card2">
+            <img src="./Screenshot_20210201-175531__01.jpg">
+        </div>
+          <div class="card2">
+            <img src="./Screenshot_20210201-175400__01.jpg">
+        </div>
+        </div>
+    </section>
+    <section class="container2" id="work">
+        <div class="container3">    
+        <div class="card2">
+          <img src="./Screenshot_20210201-185839__01.jpg">
+        </div>
+        <div class="card2">
+            <img src="./Screenshot_20210201-175603__01.jpg">
+        </div>
+          <div class="card2">
+            <img src="./Screenshot_20210201-175611__01.jpg">
+        </div>
+        </div>
+        <div class="title white">
+            <h2>My work</h2>
+        </div>
+    </section>
+    <section class="form-container" id="contact">
+        <div class="grid-container3">
+            <div class="contact-form" method="post" action="./contact-form.php">
+                <div class="form-text">
+                  <h2>Drop in your details below!</h2>  
+                  <h2>I'll ping you</h2>
+                </div>
+                <input name:"name" type="text" placeholder="Name" class="form-input">
+                <input name:"email" type="email" placeholder="Email" class="form-input">
+                <textarea name="message" rows="5" placeholder="Type your message" class="form-input"></textarea>
+                <input type="submit" class="btn1" value="Submit">
+            </div>
+        </div>
+    </section>
+    <footer id="foot">
+        <div class="footer">
+            <div class="icon"><a href="https://www.instagram.com/subiksha_29/"><i class="fab fa-instagram fa-3x"></i></a></div>
+            <div class="icon"><a href="https://www.facebook.com/subiksha.prabakaran"><i class="fab fa-facebook-square fa-3x"></i></a></div>
+            
+        </div>
+        <div class="footer-text">
+            <h3>Subiksha | Erode,India</h3>
+        </div>
+    </footer>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#work" onclick="toggleMenu()">My work</a></li>
+            <li><a href="#foot" onclick="toggleMenu()">COntact</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu(){
+            const menutoggle=document.querySelector('.toggle');
+            const sidebar=document.querySelector('.sidebar');
+            menutoggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
